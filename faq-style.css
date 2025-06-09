@@ -1,42 +1,31 @@
-/* === 見出しスタイル === */
+/* === FAQ本文用 限定スタイル === */
+/* 親要素 faq-answer-content__answer-wrapper の中だけに適用 */
 
 /* H1見出し */
-h1 {
+.faq-answer-content__answer-wrapper h1 {
   border-bottom: 2px solid #333;
   padding-bottom: 0.3em;
   margin-bottom: 1em;
 }
 
 /* H2見出し */
-h2 {
+.faq-answer-content__answer-wrapper h2 {
   border-bottom: 1.5px solid #666;
   padding-bottom: 0.3em;
   margin-bottom: 0.8em;
 }
 
 /* H3見出し */
-h3 {
+.faq-answer-content__answer-wrapper h3 {
   border-bottom: 1px dashed #999;
   padding-bottom: 0.2em;
   margin-bottom: 0.6em;
 }
 
-/* === blockquote スタイル === */
-
-/* 通常の引用（黒枠パターン） */
-blockquote {
-  border: 2px solid #000;
-  padding: 1em;
-  background-color: #fff;
-  color: #000;
-  border-radius: 4px; /* ← 角をちょっと丸めたければ追加、不要なら消してOK */
-  margin: 1em 0;
-}
-
-/* === blockquote代用：取り消し線 (s, del) を囲み風に変更 === */
-
-s, del {
-  text-decoration: none !important; /* 取り消し線を消す */
+/* 取り消し線 → 囲み風 */
+.faq-answer-content__answer-wrapper s,
+.faq-answer-content__answer-wrapper del {
+  text-decoration: none !important;
   border: 2px solid #000;
   padding: 0.5em;
   background-color: #fff;
